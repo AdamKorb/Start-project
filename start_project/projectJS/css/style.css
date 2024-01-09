@@ -1,0 +1,17 @@
+/*
+úvod do každého dokumentu
+*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+h1{
+    margin-left: 20px;
+}
+
+input{
+    margin: 20px;
+    font-size: 20px;
+}

@@ -1,0 +1,353 @@
+/*
+úvod do každého dokumentu
+*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/***** re-usable ******/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    }
+
+.heading-main h2{
+    text-align: center;
+    font-size: 30px;
+    }
+    
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 150px;
+    border-bottom: 2px solid #ff6b08;
+    margin: 20px auto;
+    }
+
+.empty-space {
+    height: 50px;
+    }
+
+/***** HEADER ******/
+
+header { 
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)), url("../img/pizza-back2.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    }
+
+#logo img {
+    width: 250px;
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    position: fixed;
+    z-index: 300;
+    }
+
+.nav-background {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    border-bottom: 2px solid  #ff6b08;
+    z-index: 200;
+    }
+    
+nav ul {
+    margin-top: 8px;
+    position: fixed;
+    margin-left: 35%;
+    z-index: 300;
+    }
+
+nav ul li {
+    display: inline-block;
+    color: #ebebeb;
+    margin-left: 25px;
+
+    }
+
+nav ul li a:link,
+nav ul li a:visited {
+        color: #ebebeb;
+        font-size: 30px;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        }
+
+nav ul li a:hover,
+nav ul li a:active {
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid #ff6b08;
+    }
+
+.header-text { 
+    position: absolute;
+    top: 50%;
+    left: 52%;
+        /*transform: translate(-50%,50%); - zapis pre posun na stred*/
+    }
+
+    .header-text h1{
+    color: #ebebeb;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    }
+
+.button {
+    display: inline-block;
+    color: #ebebeb;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #ce5505;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 8px;
+    letter-spacing: 1px;
+    }
+
+.button1:link,
+.button1:visited {
+    transition: background 1s;
+    background: #ce5505;
+    }
+
+.button1:hover,
+.button1:active {
+    background: #ff6b08;
+    border: 2px solid #ff6b08;
+    }
+
+.button2 {
+margin-left: 10px;
+    }
+
+.button2:hover,
+.button2:active {
+    transition: background 1s;
+    background: #ff6b08;
+    border: 2px solid #ff6b08;
+    }
+
+    /*** MOBILE NAVIGATION ***/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 5px;
+    margin-right: 0;
+    display: none;
+    }
+
+/***** MAIN ******/
+
+.pizza-example img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+    }
+
+.pizza-info img {
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(168, 168, 168);
+    }
+
+.text-pizza {
+    margin-bottom: 20px;
+    }
+
+.text-pizza p {
+    margin-left: 60px;
+    font-size: 20px;
+    }
+
+.text-pizza div {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 2px solid #ff6b08;
+    border-radius: 50%;
+    padding: 14px;
+    float: left;
+    }
+
+/***** REFERENCES ******/
+
+.references {
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(../img/pizza-back1.jpg);
+    background-attachment: fixed;
+    }
+
+.references h2 {
+    color: #ebebeb;
+    padding-top: 50px;
+
+    }
+
+.references h2::after {
+    border-bottom: 2px solid #ebebeb;
+    }
+
+.one-reference {
+    color: #ebebeb;
+    font-size: 25px;
+    }
+
+.one-reference p {
+    font-style: italic;
+    text-align: center;
+    }
+
+.photo-name {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    }
+
+.photo-name p {
+    padding-top: 30px;
+    margin-left: 20px;
+    float: left;
+    font-style: normal;
+    }    
+
+.photo-name img {
+    width: 25%;
+    border-radius: 50%;
+    margin-left: 15%;
+    float: left;
+    }
+
+/***** PHOTO-GALLERY-LIGHTBOX ******/
+
+.photo-segment-lightbox img {
+    width: 100%;
+    
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  rgb(168, 168, 168);
+    }
+
+/***** CONTACT-FORMULAR ******/
+
+.contact-form {
+    max-width: 700px;
+    text-align: center;
+    }
+
+.contact-form input {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 5px;
+    border: solid #ce5505;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  rgb(168, 168, 168);
+    font-size: 15px;
+    }
+    
+input[type="submit"] {
+    background: #ce5505;
+    color: #fff;
+    font-size: 20px;
+    }
+
+    input[type="submit"]:hover {
+    background: #ff6b08;
+    border: solid #ff6b08;
+    color: #000;
+    transition: background-color 0.5s;
+    }
+
+
+.contact-form textarea {
+    width: 80%;
+    margin: 5px 0px;
+    padding: 5px;
+    border: solid #ce5505;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  rgb(168, 168, 168);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    }
+
+/***** FOOTER ******/
+
+footer {
+    background: #ce5505;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    }
+
+.footer-text {
+    color: #ebebeb;
+    text-align: center;
+    margin: 10px 0px;
+    }
+
+.social {
+    text-align: center;
+    margin: 10px 0px;
+    }
+
+.social p {
+    display: inline;
+    font-size: 20px;
+    margin-right: 10px;
+    }
+
+.social p a {
+    text-decoration: none;
+    color: #ebebeb;
+    }
+
+.social p a:link
+.social p a:visited {
+    text-decoration: none;
+    }
+
+.footer-all a:hover {
+    text-decoration: none;
+    color: #000;
+    }
+
+
+
+/***** PHOTO-GALLERY ******/
+/*
+.photo-segment li {
+    height: 300px;
+    list-style-type: none;
+    background: #ff6b08;
+    overflow: hidden; /*must be for transfrom scale*
+    }
+.photo-segment img {
+    width: 100%;
+    height: 300px;
+    opacity: 0.7;
+    transform: scale(1.15); /*here*
+
+    }
+.photo-segment img:hover {
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1);
+    opacity: 1;
+    }
+*/
+
+
+/*FLOAT OFF*/
+.clearfix {zoom: 1}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    }
